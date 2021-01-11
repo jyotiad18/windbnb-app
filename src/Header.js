@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import './css/Header.css';
 import logo from './images/logo.png';
 import { useStateValue } from './StateProvider';
