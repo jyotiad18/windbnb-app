@@ -1,0 +1,47 @@
+.rooms {
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+}
+
+.rooms__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.rooms__info > h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.rooms__info > h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+}
+
+.rooms__lists {
+  display: grid;
+  margin-top: 32px;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
+}
+
+@media (max-width: 635px) {
+  .rooms__lists {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .rooms__lists {
+    grid-template-columns: repeat(2, 49%);
+  }
+}

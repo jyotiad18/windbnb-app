@@ -1,0 +1,43 @@
+.guests {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guest__info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 42px;
+  padding-left: 10px;
+  width: 114px;
+}
+
+.guest__info > h1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+.guest__info > h1 > p {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #bdbdbd;
+}
+
+.guest__number {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.guest__number > i {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

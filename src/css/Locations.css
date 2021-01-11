@@ -1,0 +1,22 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.location {
+  display: flex;
+  padding-top: 42px;
+  padding-left: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.location > span {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4f4f4f;
+}

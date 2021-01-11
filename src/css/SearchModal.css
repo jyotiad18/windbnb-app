@@ -1,0 +1,120 @@
+.searchModal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: white;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 40px 93px;
+  opacity: 0.1px;
+}
+
+.searchModel__close {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.searchModel__close > i {
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: white;
+  margin-left: 80%;
+  cursor: pointer;
+  background-color: #eb5757;
+  padding: 5px;
+}
+
+.searchModal__inputs,
+.searchModal__details {
+  display: grid;
+  grid-template-columns: repeat(3, 426px);
+}
+
+.searchModal__location,
+.searchModal__beds {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #333333;
+  border-radius: 16px;
+  padding: 12px 26px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchModal__location > span,
+.searchModal__beds > span {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 9px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.searchModal__location > h5,
+.searchModal__beds > h5,
+.searchModal__icons > span {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+}
+
+.searchModal__icons {
+  display: flex;
+  background: #eb5757;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  color: #f2f2f2;
+  padding: 15px 26px;
+  width: 90px;
+  align-items: center;
+}
+
+.searchModal__icons > span {
+  color: #f2f2f2 !important;
+}
+
+.searchModal__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .searchModal__inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media (max-width: 635px) {
+  .searchModal {
+    padding: 20px 33px;
+  }
+
+  .searchModal__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .searchModal__icons {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .searchModal {
+    padding: 20px 23px;
+  }
+
+  .searchModal__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+}
